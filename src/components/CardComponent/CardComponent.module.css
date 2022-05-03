@@ -1,0 +1,9 @@
+.componentContainer {
+  display: block;
+  border-radius: 25px;
+  background-color: hsl(215, 19%, 15%);
+  height: 340px;
+  width: 340px;
+  margin: auto;
+  padding: 35px;
+}
