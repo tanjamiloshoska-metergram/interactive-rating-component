@@ -9,18 +9,27 @@ const RatingComponent = ({
   description,
   ratingScale,
   onSubmitClick,
+  onRatingButtonClick,
+  selectedRating,
 }) => {
   const ratingButtons = ratingScale.map((rating) => (
-    <RatingButton rating={rating.rating} key={rating.id} />
+    <RatingButton
+      rating={rating.value}
+      key={rating.id}
+      onClick={onRatingButtonClick}
+      isSelected={rating.value === selectedRating}
+    />
   ));
 
   return (
     <CardComponent>
-      <img className={styles.starLogo} src={starLogo} alt="Star logo" />
-      <h1>{header}</h1>
-      <p>{description}</p>
-      <div>{ratingButtons}</div>
-      <FormSubmitButton onClick={onSubmitClick} />
+      <div className={styles.ratingWrapper}>
+        <img className={styles.starLogo} src={starLogo} alt="Star logo" />
+        <h1>{header}</h1>
+        <p>{description}</p>
+        <div>{ratingButtons}</div>
+        <FormSubmitButton onClick={onSubmitClick} />
+      </div>
     </CardComponent>
   );
 };

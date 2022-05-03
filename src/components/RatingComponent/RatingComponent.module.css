@@ -1,10 +1,10 @@
-p {
+.ratingWrapper p {
   color: hsl(217, 12%, 63%);
   text-align: justify;
   padding-bottom: 10px;
 }
 
-h1 {
+.ratingWrapper h1 {
   color: hsl(0, 0%, 100%);
 }
 
