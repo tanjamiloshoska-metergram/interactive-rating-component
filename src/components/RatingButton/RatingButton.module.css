@@ -1,0 +1,17 @@
+.ratingButton {
+  background-color: hsl(216, 15%, 25%);
+  border: 0px;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  font-family: "Overpass", sans-serif;
+  font-size: medium;
+  color: hsl(217, 12%, 63%);
+}
+
+.ratingButton:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}

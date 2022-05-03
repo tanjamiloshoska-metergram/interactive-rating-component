@@ -1,0 +1,16 @@
+.submitButton {
+  border: 0px;
+  padding: 13px;
+  width: 100%;
+  border: 0ch;
+  border-radius: 25px;
+  background-color: hsl(25, 97%, 53%);
+  font-family: "Overpass", sans-serif;
+  font-size: medium;
+  color: hsl(0, 0%, 100%);
+}
+
+.submitButton:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
