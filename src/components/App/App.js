@@ -31,7 +31,7 @@ function App() {
   const [selectedRating, setSelectedRating] = useState(undefined);
 
   const onSubmitClick = () => {
-    if (selectedRating != undefined) setSubmitClicked(true);
+    setSubmitClicked(true);
   };
 
   const onSelectRating = (rating) => {

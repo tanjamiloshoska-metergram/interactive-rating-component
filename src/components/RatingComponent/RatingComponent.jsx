@@ -28,7 +28,10 @@ const RatingComponent = ({
         <h1>{header}</h1>
         <p>{description}</p>
         <div>{ratingButtons}</div>
-        <FormSubmitButton onClick={onSubmitClick} />
+        <FormSubmitButton
+          onClick={onSubmitClick}
+          isDisabled={!selectedRating}
+        />
       </div>
     </CardComponent>
   );
