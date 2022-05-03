@@ -1,6 +1,10 @@
 import styles from "./FormSubmitButton.module.css";
-const FormSubmitButton = () => {
-  return <button className={styles.submitButton}>SUBMIT</button>;
+const FormSubmitButton = ({ onClick }) => {
+  return (
+    <button className={styles.submitButton} onClick={onClick}>
+      SUBMIT
+    </button>
+  );
 };
 
 export default FormSubmitButton;

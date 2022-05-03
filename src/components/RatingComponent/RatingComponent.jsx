@@ -4,7 +4,12 @@ import starLogo from "../../assets/icon-star.svg";
 import styles from "./RatingComponent.module.css";
 import CardComponent from "../CardComponent/CardComponent";
 
-const RatingComponent = ({ header, description, ratingScale }) => {
+const RatingComponent = ({
+  header,
+  description,
+  ratingScale,
+  onSubmitClick,
+}) => {
   const ratingButtons = ratingScale.map((rating) => (
     <RatingButton rating={rating.rating} key={rating.id} />
   ));
@@ -15,7 +20,7 @@ const RatingComponent = ({ header, description, ratingScale }) => {
       <h1>{header}</h1>
       <p>{description}</p>
       <div>{ratingButtons}</div>
-      <FormSubmitButton />
+      <FormSubmitButton onClick={onSubmitClick} />
     </CardComponent>
   );
 };
