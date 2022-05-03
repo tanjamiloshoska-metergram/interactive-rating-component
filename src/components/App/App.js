@@ -1,4 +1,4 @@
-import RatingComponent from "./components/RatingComponent/RatingComponent";
+import RatingComponent from "../RatingComponent/RatingComponent.jsx";
 import "./App.css";
 
 const ratingScale = [
