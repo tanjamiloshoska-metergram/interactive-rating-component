@@ -27,7 +27,7 @@ const RatingComponent = ({
         <img className={styles.starLogo} src={starLogo} alt="Star logo" />
         <h1>{header}</h1>
         <p>{description}</p>
-        <div>{ratingButtons}</div>
+        <div className={styles.ratingButtonRow}>{ratingButtons}</div>
         <FormSubmitButton
           onClick={onSubmitClick}
           isDisabled={!selectedRating}

@@ -13,3 +13,9 @@
   padding: 15px;
   border-radius: 50%;
 }
+
+.ratingButtonRow {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
