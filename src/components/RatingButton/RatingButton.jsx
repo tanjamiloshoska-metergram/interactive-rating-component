@@ -1,19 +1,15 @@
 import styles from "./RatingButton.module.css";
-const RatingButton = ({ rating, onClick, isSelected }) => {
+const RatingButton = ({ children, onClick, isSelected }) => {
   return (
     <button
-      className={styles.ratingButton}
-      onClick={() => onClick(rating)}
-      style={
+      className={
         isSelected
-          ? {
-              backgroundColor: "hsl(25, 97%, 53%)",
-              color: "hsl(0, 0%, 100%)",
-            }
-          : null
+          ? [styles.ratingButton, styles.selectedRatingButton].join(" ")
+          : styles.ratingButton
       }
+      onClick={onClick}
     >
-      {rating}
+      {children}
     </button>
   );
 };
